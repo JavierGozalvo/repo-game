@@ -1,0 +1,241 @@
+Started GET "/" for ::1 at 2023-10-22 22:34:11 +0200
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20231022203348_create_juegos.rb
+
+
+):
+  
+activerecord (7.0.8) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJuegos (20231022203348)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "juegos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "descripcion" text, "categoria" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231022203348"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-22 20:34:41.284371"], ["updated_at", "2023-10-22 20:34:41.284371"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-10-22 22:34:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 732)
+Completed 200 OK in 18ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 7178)
+
+
+Started GET "/" for ::1 at 2023-10-22 22:42:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 732)
+Completed 200 OK in 16ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 6762)
+
+
+Started GET "/" for ::1 at 2023-10-22 22:42:03 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 454)
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1366)
+
+
+Started GET "/juegos" for ::1 at 2023-10-22 22:42:07 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.3ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1172)
+  Rendered layout layouts/application.html.erb (Duration: 226.4ms | Allocations: 100494)
+Completed 200 OK in 235ms (Views: 228.2ms | ActiveRecord: 0.3ms | Allocations: 102309)
+
+
+Started GET "/juegos/new" for ::1 at 2023-10-22 22:42:10 +0200
+Processing by JuegosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/new.html.erb within layouts/application
+  Rendered juegos/_form.html.erb (Duration: 22.8ms | Allocations: 3326)
+  Rendered juegos/new.html.erb within layouts/application (Duration: 26.3ms | Allocations: 3663)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 5878)
+Completed 200 OK in 79ms (Views: 44.0ms | ActiveRecord: 0.7ms | Allocations: 22305)
+
+
+Started GET "/juegos" for ::1 at 2023-10-22 22:42:12 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.1ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 701)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2944)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 3279)
+
+
+Started GET "/juegos/new" for ::1 at 2023-10-22 22:42:27 +0200
+Processing by JuegosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/new.html.erb within layouts/application
+  Rendered juegos/_form.html.erb (Duration: 8.2ms | Allocations: 1181)
+  Rendered juegos/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1266)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3481)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 3815)
+
+
+Started POST "/juegos" for ::1 at 2023-10-22 22:42:37 +0200
+Processing by JuegosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "juego"=>{"nombre"=>"Metal gear solid", "descripcion"=>"un guarro", "categoria"=>"Shooter"}, "commit"=>"Create Juego"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/juegos_controller.rb:27:in `block in create'
+  [1m[36mJuego Create (1.8ms)[0m  [1m[32mINSERT INTO "juegos" ("nombre", "descripcion", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Metal gear solid"], ["descripcion", "un guarro"], ["categoria", "Shooter"], ["created_at", "2023-10-22 20:42:37.756927"], ["updated_at", "2023-10-22 20:42:37.756927"]]
+  ↳ app/controllers/juegos_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/juegos_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/juegos/1
+Completed 302 Found in 14ms (ActiveRecord: 2.8ms | Allocations: 3300)
+
+
+Started GET "/juegos/1" for ::1 at 2023-10-22 22:42:37 +0200
+Processing by JuegosController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos" WHERE "juegos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/juegos_controller.rb:63:in `set_juego'
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/show.html.erb within layouts/application
+  Rendered juegos/_juego.html.erb (Duration: 0.6ms | Allocations: 252)
+  Rendered juegos/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1499)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3707)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 6510)
+
+
+Started GET "/juegos" for ::1 at 2023-10-22 22:42:40 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 830)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3058)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 3385)
+
+
+Started GET "/juegos/1" for ::1 at 2023-10-22 22:42:47 +0200
+Processing by JuegosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mJuego Load (0.4ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos" WHERE "juegos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/juegos_controller.rb:63:in `set_juego'
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/show.html.erb within layouts/application
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2771)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 3531)
+
+
+Started GET "/juegos/1/edit" for ::1 at 2023-10-22 22:42:48 +0200
+Processing by JuegosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos" WHERE "juegos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/juegos_controller.rb:63:in `set_juego'
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/edit.html.erb within layouts/application
+  Rendered juegos/_form.html.erb (Duration: 4.6ms | Allocations: 1288)
+  Rendered juegos/edit.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1592)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3799)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 4618)
+
+
+Started PATCH "/juegos/1" for ::1 at 2023-10-22 22:42:53 +0200
+Processing by JuegosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "juego"=>{"nombre"=>"Metal gear solid", "descripcion"=>"un guarro muy guarro", "categoria"=>"Shooter"}, "commit"=>"Update Juego", "id"=>"1"}
+  [1m[36mJuego Load (0.3ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos" WHERE "juegos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/juegos_controller.rb:63:in `set_juego'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/juegos_controller.rb:40:in `block in update'
+  [1m[36mJuego Update (1.2ms)[0m  [1m[33mUPDATE "juegos" SET "descripcion" = ?, "updated_at" = ? WHERE "juegos"."id" = ?[0m  [["descripcion", "un guarro muy guarro"], ["updated_at", "2023-10-22 20:42:53.917145"], ["id", 1]]
+  ↳ app/controllers/juegos_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/juegos_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/juegos/1
+Completed 302 Found in 12ms (ActiveRecord: 3.3ms | Allocations: 2797)
+
+
+Started GET "/juegos/1" for ::1 at 2023-10-22 22:42:53 +0200
+Processing by JuegosController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mJuego Load (0.1ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos" WHERE "juegos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/juegos_controller.rb:63:in `set_juego'
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/show.html.erb within layouts/application
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 597)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2807)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 3570)
+
+
+Started GET "/juegos" for ::1 at 2023-10-22 22:42:55 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 843)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3071)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 3398)
+
+
