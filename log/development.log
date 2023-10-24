@@ -239,3 +239,297 @@ Processing by JuegosController#index as HTML
 Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 3398)
 
 
+Started GET "/juegos" for ::1 at 2023-10-23 17:26:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.4ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.5ms | Allocations: 283)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 18366)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 53465)
+Completed 200 OK in 51ms (Views: 41.4ms | ActiveRecord: 0.7ms | Allocations: 60321)
+
+
+Started GET "/juegos" for ::1 at 2023-10-23 17:33:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.3ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.5ms | Allocations: 286)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 18391)
+  Rendered layout layouts/application.html.erb (Duration: 673.2ms | Allocations: 126946)
+Completed 200 OK in 686ms (Views: 675.6ms | ActiveRecord: 0.6ms | Allocations: 133799)
+
+
+Started GET "/juegos" for ::1 at 2023-10-23 17:33:57 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 853)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3096)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 3430)
+
+
+Started GET "/juegos" for ::1 at 2023-10-23 17:33:58 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 856)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3099)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 3431)
+
+
+Started GET "/juegos" for ::1 at 2023-10-23 17:35:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.3ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.4ms | Allocations: 283)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 18365)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 24860)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.5ms | Allocations: 31663)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /Users/a0834766/Desktop/repo-game/app/assets/config
+  /Users/a0834766/Desktop/repo-game/app/assets/images
+  /Users/a0834766/Desktop/repo-game/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/stimulus-rails-1.3.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/turbo-rails-1.5.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/importmap-rails-1.2.1/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actioncable-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actionview-7.0.8/lib/assets/compiled
+  /Users/a0834766/Desktop/repo-game/app/javascript
+  /Users/a0834766/Desktop/repo-game/vendor/javascript
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/popper_js-2.11.8/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/javascripts):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:9
+Started GET "/juegos" for ::1 at 2023-10-23 17:37:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.4ms | Allocations: 283)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 18365)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 24320)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.5ms | Allocations: 31123)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap/dist/css/bootstrap' with type 'text/css'
+Checked in these paths: 
+  /Users/a0834766/Desktop/repo-game/app/assets/config
+  /Users/a0834766/Desktop/repo-game/app/assets/images
+  /Users/a0834766/Desktop/repo-game/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/stimulus-rails-1.3.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/turbo-rails-1.5.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/importmap-rails-1.2.1/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actioncable-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actionview-7.0.8/lib/assets/compiled
+  /Users/a0834766/Desktop/repo-game/app/javascript
+  /Users/a0834766/Desktop/repo-game/vendor/javascript
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/popper_js-2.11.8/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/javascripts):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:9
+Started GET "/juegos" for ::1 at 2023-10-23 17:38:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.4ms | Allocations: 283)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 18365)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 24329)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.5ms | Allocations: 31132)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap/dist/css/bootstrap.min' with type 'text/css'
+Checked in these paths: 
+  /Users/a0834766/Desktop/repo-game/app/assets/config
+  /Users/a0834766/Desktop/repo-game/app/assets/images
+  /Users/a0834766/Desktop/repo-game/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/stimulus-rails-1.3.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/turbo-rails-1.5.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/importmap-rails-1.2.1/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actioncable-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actionview-7.0.8/lib/assets/compiled
+  /Users/a0834766/Desktop/repo-game/app/javascript
+  /Users/a0834766/Desktop/repo-game/vendor/javascript
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/popper_js-2.11.8/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/javascripts):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:9
+Started GET "/juegos" for ::1 at 2023-10-24 10:03:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.3ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.5ms | Allocations: 283)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 18365)
+  Rendered layout layouts/application.html.erb (Duration: 2655.3ms | Allocations: 96735)
+Completed 500 Internal Server Error in 2667ms (ActiveRecord: 0.5ms | Allocations: 103538)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/a0834766/Desktop/repo-game/app/assets/config
+  /Users/a0834766/Desktop/repo-game/app/assets/images
+  /Users/a0834766/Desktop/repo-game/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/stimulus-rails-1.3.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/turbo-rails-1.5.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/importmap-rails-1.2.1/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actioncable-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actionview-7.0.8/lib/assets/compiled
+  /Users/a0834766/Desktop/repo-game/app/javascript
+  /Users/a0834766/Desktop/repo-game/vendor/javascript
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/popper_js-2.11.8/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/javascripts):
+  
+app/javascript/application.js:2
+Started GET "/juegos" for ::1 at 2023-10-24 10:03:43 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 848)
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 27278)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.2ms | Allocations: 27579)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/a0834766/Desktop/repo-game/app/assets/config
+  /Users/a0834766/Desktop/repo-game/app/assets/images
+  /Users/a0834766/Desktop/repo-game/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/stimulus-rails-1.3.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/turbo-rails-1.5.0/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/importmap-rails-1.2.1/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8/app/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actioncable-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.8/app/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/actionview-7.0.8/lib/assets/compiled
+  /Users/a0834766/Desktop/repo-game/app/javascript
+  /Users/a0834766/Desktop/repo-game/vendor/javascript
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/popper_js-2.11.8/assets/javascripts
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/stylesheets
+  /Users/a0834766/.rvm/gems/ruby-3.0.0/gems/bootstrap-5.0.2/assets/javascripts):
+  
+app/javascript/application.js:2
+Started GET "/juegos" for ::1 at 2023-10-24 10:04:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.3ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.4ms | Allocations: 283)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 18368)
+  Rendered layout layouts/application.html.erb (Duration: 94.5ms | Allocations: 69986)
+Completed 200 OK in 105ms (Views: 96.6ms | ActiveRecord: 0.5ms | Allocations: 76838)
+
+
+Started GET "/juegos" for ::1 at 2023-10-24 10:07:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.2ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.4ms | Allocations: 283)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 18367)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 61312)
+Completed 200 OK in 70ms (Views: 62.2ms | ActiveRecord: 0.4ms | Allocations: 68165)
+
+
+Started GET "/juegos/1" for ::1 at 2023-10-24 10:07:55 +0200
+Processing by JuegosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mJuego Load (0.3ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos" WHERE "juegos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/juegos_controller.rb:63:in `set_juego'
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/show.html.erb within layouts/application
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 806)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6004)
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 8819)
+
+
+Started GET "/juegos" for ::1 at 2023-10-24 10:07:59 +0200
+Processing by JuegosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering juegos/index.html.erb within layouts/application
+  [1m[36mJuego Load (0.1ms)[0m  [1m[34mSELECT "juegos".* FROM "juegos"[0m
+  ↳ app/views/juegos/index.html.erb:6
+  Rendered juegos/_juego.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered juegos/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 854)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6074)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 6406)
+
+
